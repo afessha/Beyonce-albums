@@ -1,15 +1,9 @@
   <template>
-    <div>
-        <h1>Beyone Abums</h1>
-        <ul>
-            <div v-for="(album) in albums" :key="album.albumId">
-                {{album.collectionName}}
-            </div>
-            <div v-if="error">
-                Error from API call
-            </div>
-        </ul>
-    </div>
+    <v-layout row wrap>
+        <v-flex v-for="(album) in albums" :key="album.albumId" xs12>
+            {{album.collectionName}}
+        </v-flex>
+    </v-layout>
 </template>
 
 <script>

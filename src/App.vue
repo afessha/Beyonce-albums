@@ -1,9 +1,15 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <h1>{{message}}</h1>
-    <AlbumViewer />
-  </div>
+  <v-app>
+      <v-toolbar app>
+          <v-toolbar-title>Beyonce App</v-toolbar-title>
+      </v-toolbar>
+      <v-content>
+        <AlbumViewer />
+      </v-content>
+      <v-footer>
+        ©Awet 2018
+      </v-footer>
+  </v-app>
 </template>
 
 <script>
