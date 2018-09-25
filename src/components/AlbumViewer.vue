@@ -1,6 +1,7 @@
   <template>
     <v-layout row wrap>
-        <v-flex v-for="(album) in albums" :key="album.albumId" xs12>
+      <input type="text" v-model="search" placeholder="search by album"/>
+        <v-flex v-for="(album) in filteredAlbums" :key="album.albumId" xs12>
             {{album.collectionName}}
         </v-flex>
     </v-layout>
@@ -12,7 +13,8 @@ import axios from "axios";
 export default {
   name: "AlbumViewer",
   data: () => ({
-    albums: []
+    albums: [],
+    search: ""
   }),
   mounted() {
     this.getAlbums();
@@ -29,9 +31,23 @@ export default {
         this.error = true;
       }
     }
+  },
+  computed: {
+    filteredAlbums: function() {
+      return this.albums.filter(album => {
+        return album.collectionName
+          .toLowerCase()
+          .match(this.search.toLowerCase());
+      });
+    }
   }
 };
 </script>
 
-<style>
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style scoped>
+input {
+  border: 2px solid;
+  margin: 25px;
+}
 </style>
