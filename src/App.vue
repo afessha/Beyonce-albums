@@ -13,16 +13,10 @@
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
 import AlbumViewer from "./components/AlbumViewer.vue";
 
 export default {
-  name: "app",
-  data: () => ({
-    message: "mozafar"
-  }),
   components: {
-    HelloWorld,
     AlbumViewer
   }
 };
