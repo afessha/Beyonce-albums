@@ -1,10 +1,13 @@
   <template>
+  <div>
+    <h3>{{subTitle}} </h3>
+  <input type="text" v-model="search" placeholder="search by album"/>
     <v-layout row wrap>
-      <input type="text" v-model="search" placeholder="search by album"/>
         <v-flex v-for="(album) in filteredAlbums" :key="album.albumId" xs12>
             {{album.collectionName}}
         </v-flex>
     </v-layout>
+    </div>
 </template>
 
 <script>
@@ -14,7 +17,8 @@ export default {
   name: "AlbumViewer",
   data: () => ({
     albums: [],
-    search: ""
+    search: "",
+    subTitle: "Beyonce Albums"
   }),
   mounted() {
     this.getAlbums();
