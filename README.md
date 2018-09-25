@@ -1,5 +1,5 @@
 # beyonce-app
-
+This is a small app to get beyonce's albums from an api and render them. The tecnology used is Vue.js.
 ## Project setup
 ```
 npm install
