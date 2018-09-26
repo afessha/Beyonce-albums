@@ -1,13 +1,13 @@
 # beyonce-app
 
-This is a small Vue app to display beyonce's albums, I created this app in an attempt to learn Vue. You can filter albums by CollectionName(album name). The library used are axios and vuetify.
+This is a small Vue app to display Beyonce's albums, I created this app in an attempt to learn Vue. You can filter albums by CollectionName(album name). The libraries used are axios and vuetify.
 
-I have deployed this app with Netlify the link is
-[Click Here](https://unruffled-pike-8353c2.netlify.com/)
+I have deployed this app with Netlify the link can be found
+[Here](https://unruffled-pike-8353c2.netlify.com/)
 
 ![alt text](./src/assets/app.JPG)
 
-The react version of this app can be found at [Beyonce-app](https://github.com/AKFessha/beyonce-app/tree/solution) repo
+I have previously developed this app with React.The React version of this app can also be found at [Beyonce-app](https://github.com/AKFessha/beyonce-app/tree/solution) repo
 
 ## Project setup
 
