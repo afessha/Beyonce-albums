@@ -1,6 +1,8 @@
 # beyonce-app
 
-This is a small app to display beyonce's albums. You can filter albums by CollectionName(album name). The technology used is Vue.js.
+This is a small Vue app to display beyonce's albums, I created this app in an attempt to learn Vue. You can filter albums by CollectionName(album name). The library used are axios and vuetify.
+The react version of this app can be found at [Beyonce-app](https://github.com/AKFessha/beyonce-app/tree/solution) repo
+![alt text](./src/assets/app.JPG)
 
 ## Project setup
 
